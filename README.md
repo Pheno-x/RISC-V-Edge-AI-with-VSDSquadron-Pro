@@ -50,3 +50,19 @@ The course spans **27 learning modules**, progressing from basic ML to quantized
 ---
 
 ## 📂 Project Structure
+```
+├── src/
+│ ├── training.py # Train & quantize MNIST model
+│ ├── app_inference.h # Inference helper functions
+│ ├── main.c # Bare-metal simulation logic
+│ ├── mnist_quantized_model.tflite # Quantized TFLite model
+│ ├── mnist_model_params.c/.h # Quantized weights & declarations
+│ ├── cam_capture_image.py # Simulated camera input
+│ ├── Image_Processing.py # Preprocessing (resize 28x28 → 12x12)
+│ ├── send_image_uart.py # UART-based image transmission (simulated)
+│ └── Makefile # Build setup (optional, C project)
+├── images/
+│ ├── mnist_sample.png # Example digit
+│ └── nn_architecture.jpg # Model architecture diagram
+└── README.md # This file
+```
