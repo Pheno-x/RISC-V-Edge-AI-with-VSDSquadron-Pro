@@ -2,7 +2,7 @@
 
 # Course Project
 
-## 📌 Overview
+## Overview
 This repository documents my progress through the **RISC-V Edge AI with VSDSquadron PRO** course by **VLSI System Design (VSD)**.  
 The course is centered on implementing **machine learning (ML) and neural networks** on a highly resource-limited platform — the **SiFive FE310-G002 RISC-V SoC** with only **16 KB RAM**.  
 
@@ -12,7 +12,7 @@ The core of this project is an **MNIST handwritten digit classifier**, trained a
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Train and quantize a neural network for **MNIST digit recognition**.  
 - Optimize the model to fit **memory-constrained environments** (≤16 KB).  
 - Simulate deployment on **SiFive FE310-G002** without requiring hardware.  
@@ -20,7 +20,7 @@ The core of this project is an **MNIST handwritten digit classifier**, trained a
 
 ---
 
-## 📚 Course Modules (Highlights)
+##  Course Modules (Highlights)
 The course spans **27 learning modules**, progressing from basic ML to quantized NN deployment:
 
 1. Edge AI introduction & VSDSquadron board overview  
@@ -49,7 +49,7 @@ The course spans **27 learning modules**, progressing from basic ML to quantized
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 ├── src/
 │ ├── training.py # Train & quantize MNIST model
@@ -66,3 +66,42 @@ The course spans **27 learning modules**, progressing from basic ML to quantized
 │ └── nn_architecture.jpg # Model architecture diagram
 └── README.md # This file
 ```
+---
+
+## ⚙️ Setup Instructions
+
+1. **Install Python dependencies**
+   ```bash
+   pip install tensorflow==2.15.0 numpy matplotlib
+2. **Train & Quantize the Model**
+   python src/training.py - From RiscV_Edge_AI_Workshop repo | Author: dhanvantibhavsar
+
+---
+
+##  Model Details
+- **Input:** 12×12 grayscale image (downsized from MNIST 28×28)  
+- **Hidden Layers:** 2 dense layers with 64 neurons each (LeakyReLU activation)  
+- **Output:** 10 neurons (digits 0–9)  
+- **Quantization:** 8-bit integer format (final size ≈ 17 KB)  
+- **Inference:** Optimized C implementation with integer-only ops (ReLU + FC layer)  
+
+---
+
+##  Key Learnings
+- Built a complete **Edge AI pipeline** without needing physical hardware  
+- Learned **quantization strategies** to squeeze models into 16 KB SRAM  
+- Explored **bare-metal RISC-V programming concepts** via simulation  
+- Implemented **image preprocessing + simulated UART pipeline** for deployment  
+- Gained confidence in **cross-domain workflow** (Python ML ↔ Embedded C)  
+
+---
+
+##  Acknowledgments
+- **VSD (VLSI System Design)** – for course resources and mentorship  
+- **SiFive** – for FE310-G002 documentation & SoC specifications  
+- **TensorFlow Lite** – for providing quantization and deployment tools  
+
+---
+
+##  Repository Status
+No releases yet. Project under active development.
