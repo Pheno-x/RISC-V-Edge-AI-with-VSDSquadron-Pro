@@ -81,9 +81,11 @@ The course spans **27 learning modules**, progressing from basic ML to quantized
    ```bash
    pip install tensorflow==2.15.0 numpy matplotlib
 2. **Train & Quantize the Model**
-   python src/training.py - From RiscV_Edge_AI_Workshop repo | Author: dhanvantibhavsar
+  ```bash
+  python src/training.py - From RiscV_Edge_AI_Workshop repo | Author: dhanvantibhavsar
+```
 3. **Feedom Studio**
-   Reffer Datasheet From repo
+ Reffer Datasheet From repo.
 
 
 ---
