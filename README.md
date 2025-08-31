@@ -12,6 +12,13 @@ The core of this project is an **MNIST handwritten digit classifier**, trained a
 
 ---
 
+## Note
+All the code in this repository was developed as part of a workshop.  
+I currently do not have access to the required hardware board, so the programs have not been tested on the actual hardware.  
+However, each project has been built successfully with **zero errors and zero warnings** in the development environment.
+
+---
+
 ##  Objectives
 - Train and quantize a neural network for **MNIST digit recognition**.  
 - Optimize the model to fit **memory-constrained environments** (≤16 KB).  
@@ -68,13 +75,16 @@ The course spans **27 learning modules**, progressing from basic ML to quantized
 ```
 ---
 
-## ⚙️ Setup Instructions
+## ⚙ Setup Instructions
 
 1. **Install Python dependencies**
    ```bash
    pip install tensorflow==2.15.0 numpy matplotlib
 2. **Train & Quantize the Model**
    python src/training.py - From RiscV_Edge_AI_Workshop repo | Author: dhanvantibhavsar
+3. **Feedom Studio**
+   Reffer Datasheet From repo
+
 
 ---
 
