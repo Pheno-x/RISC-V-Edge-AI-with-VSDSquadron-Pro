@@ -46,12 +46,12 @@ The course spans **27 learning modules**, progressing from basic ML to quantized
 - No physical board used — simulation only.  
 
 **Tools & Software:**
-- **VSCode** – main development IDE  
+- **Google Colab**
 - **Python 3.10+** with:  
   - `tensorflow==2.15.0`  
   - `numpy`  
   - `matplotlib`  
-- **Freedom Studio 3.1.1 (optional)** – RISC-V simulation/debugging  
+- **Freedom Studio 3.1.1** – RISC-V simulation/debugging  
 - **RISC-V GNU Toolchain (optional)** – for compiling C code  
 
 ---
@@ -75,7 +75,7 @@ The course spans **27 learning modules**, progressing from basic ML to quantized
 ```
 ---
 
-## ⚙ Setup Instructions
+##  Setup Instructions
 
 1. **Install Python dependencies**
    ```bash
@@ -85,8 +85,9 @@ The course spans **27 learning modules**, progressing from basic ML to quantized
   python src/training.py - From RiscV_Edge_AI_Workshop repo | Author: dhanvantibhavsar
 ```
 3. **Feedom Studio**
- Reffer Datasheet From repo.
-
+```bash
+ Reffer Datasheet (From Page 10  for Windows) 
+```
 
 ---
 
